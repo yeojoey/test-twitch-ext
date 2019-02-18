@@ -102,7 +102,6 @@ const server = new Hapi.Server(serverOptions);
       handler: (request, h) => {
                  return h.file('./public/video_overlay.html');
              }
-      }
   });
 
   // Handle a viewer request to cycle the color.
