@@ -92,6 +92,19 @@ if (fs.existsSync(serverPathRoot + '.crt') && fs.existsSync(serverPathRoot + '.k
 const server = new Hapi.Server(serverOptions);
 
 (async () => {
+
+  await server.register(require('inert'));
+
+  // Serve static files
+  server.route({
+      method: 'GET',
+      path: '/video_overlay',
+      handler: function (request, h) {
+
+          return h.file('/public/video_overlay');
+      }
+  });
+
   // Handle a viewer request to cycle the color.
   server.route({
     method: 'POST',
