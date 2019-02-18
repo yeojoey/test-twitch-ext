@@ -96,13 +96,17 @@ const server = new Hapi.Server(serverOptions);
   await server.register(require('inert'));
 
   // Serve static files
-  server.route({
-      method: 'GET',
-      path: '/video_overlay.html',
-      handler: (request, h) => {
-                 return h.file('./public/video_overlay.html');
-             }
-  });
+    server.route({
+      method: "GET",
+      path: "/{param*}",
+      handler: {
+        directory: {
+          path: "./public",
+          redirectToSlash: true,
+          index: true
+        }
+      }
+    });
 
   // Handle a viewer request to cycle the color.
   server.route({
