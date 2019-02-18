@@ -1,0 +1,58 @@
+{
+  "backendCommand": "",
+  "backendFolderName": "",
+  "extensionViews": [],
+  "frontendCommand": "",
+  "frontendFolderName": "",
+  "manifest": {
+    "anchor": "video_overlay",
+    "assetUrls": [],
+    "authorName": "yeojoey2",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost.rig.twitch.tv:8080/config.html",
+    "configurationLocation": "hosted",
+    "description": "test",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "https://media.forgecdn.net/avatars/191/581/636860402598143799.png",
+    "iconUrls": {
+      "100x100": "https://media.forgecdn.net/avatars/191/581/636860402598143799.png"
+    },
+    "id": "183b278o9c1rpuzv0x77d4vtlwc8y9",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "JoeyExtTest",
+    "panelHeight": 0,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "internal/screenshots/test_data.png"
+    ],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "Test",
+    "supportEmail": "yeojoey@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerUrl": "",
+    "viewerUrls": {
+      "videoOverlay": "https://localhost.rig.twitch.tv:8080/video_overlay.html"
+    },
+    "views": {
+      "config": {
+        "canLinkExternalContent": false,
+        "viewerUrl": "https://localhost.rig.twitch.tv:8080/config.html"
+      },
+      "videoOverlay": {
+        "canLinkExternalContent": false,
+        "viewerUrl": "https://localhost.rig.twitch.tv:8080/video_overlay.html"
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "name": "JoeyExtTest"
+}
