@@ -98,13 +98,11 @@ const server = new Hapi.Server(serverOptions);
   // Serve static files
   server.route({
       method: 'GET',
-      path: '/{param*}',
-      handler: {
-        directory: {
-          path: '/public',
-          //index: 'video_overlay.html',
-          listing: true
-        }
+      path: '/video_overlay.html',
+      handler: (request, h) => {
+
+                 return h.file('./public/video_overlay.html');
+             }
       }
   });
 
