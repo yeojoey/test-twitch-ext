@@ -15,7 +15,7 @@ function createRequest(type, method) {
 
     return {
         type: type,
-        url: location.protocol + '//localhost:8081/color/' + method,
+        url: location.protocol + '//test-twitch-ext.herokuapp.com/color/' + method,
         success: updateBlock,
         error: logError
     }
