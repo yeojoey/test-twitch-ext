@@ -100,7 +100,6 @@ const server = new Hapi.Server(serverOptions);
       method: 'GET',
       path: '/video_overlay.html',
       handler: (request, h) => {
-
                  return h.file('./public/video_overlay.html');
              }
       }
