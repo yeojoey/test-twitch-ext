@@ -102,7 +102,8 @@ const server = new Hapi.Server(serverOptions);
       handler: {
         directory: {
           path: '/public',
-          index: 'video_overlay.html'
+          //index: 'video_overlay.html',
+          listing: true
         }
       }
   });
